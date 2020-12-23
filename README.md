@@ -1,5 +1,6 @@
 # UArmForROS
 This is the uarm ROS package designed by Joey Song ( joey@ufactory.cc / astainsong@gmail.com)
+updated by QiangLi for the winter holidy project with my daughter (liqiang_hn_cn@hotmail.com) 
 
 ## 0. Quickstart and Execution
 ---
@@ -22,7 +23,11 @@ For using this package, the [pyUarm](https://github.com/uArm-Developer/pyuarm) l
 
 ```bash
 $ pip install pyuarm
+--------------------------------------------------------------------
+Qiang's test suggest to install pyuarm from source. The version is not the same with
+pip installation but works in his testing
 ```
+
 
 And check your uArms's VID:PID using lsusb after connecting uArm.
 ```bash
@@ -55,7 +60,10 @@ $ python -m pyuarm.tools.firmware -d
 Install ros package in your src folder of your [Catkin workspace](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment).
 ```bash
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/uArm-Developer/UArmForROS.git
+$ git clone https://github.com/uArm-Developer/UArmForROS.git 
+-------------------------------------------------------------------
+git clone https://github.com/uArm-Developer/UArmForROS.git uarm
+-------------------------------------------------------------------
 $ cd ~/catkin_ws
 $ catkin_make
 ```

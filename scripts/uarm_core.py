@@ -145,12 +145,15 @@ def connectFcn():
 		print '======================================================='
 
 		if len(sys.argv) == 2:
+                        print 'Is Connected...............................1'
 			failed_number = 21
 			uarm = pyuarm.get_uarm()
+			print 'Is Connected...............................2'
 			uarm.connect()
+			print 'Is Connected...............................3'
 			connectionStatus = 1
 
-			print 'Connected'
+			print 'Is Connected...............................4'
 			return 21
 
 		elif len(sys.argv) == 3:
